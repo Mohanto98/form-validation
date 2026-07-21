@@ -4,6 +4,10 @@ pipeline {
       stage("build"){
             steps {
               echo "Building the application."
+              script {
+                def name = 'Subhajyoti'
+                echo name
+              }
             }
       }
     stage("test"){
